@@ -43,28 +43,4 @@ class API {
             completion(nil, MyWeatherErros.NoInternetConnection)
         }
     }
-    
-    func testGetWeatherInfo() -> Bool {
-        let testA: String? = nil
-        let testB = "0"
-        let testC = "1"
-        let testD = "2"
-        let testE = "3"
-        let testF = "4"
-        
-        var resultTestA: Bool = false
-        var resultTestB: Bool = false
-        var resultTestC: Bool = false
-        var resultTestD = false
-        var resultTestE = false
-        var resultTestF = false
-        
-        getWeatherInfo(byZipCode: testA) { (info, error) in
-            
-            if info == nil && (error as! MyWeatherErros) == .ZipCodeInvalid {
-                resultTestA = true
-            }
-        }
-        return false
-    }
 }
