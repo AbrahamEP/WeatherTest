@@ -31,8 +31,8 @@ class ViewController: UIViewController {
         self.myCustomView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(self.myCustomView)
         
-        //self.myCustomView.topAnchor.constraint(equalTo: self.myLabel.bottomAnchor, constant: 10).isActive = true
-        self.myCustomView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0)
+        self.myCustomView.topAnchor.constraint(equalTo: self.myLabel.bottomAnchor, constant: 10).isActive = true
+        //self.myCustomView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0)
         self.myCustomView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.myCustomView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
         self.myCustomView.heightAnchor.constraint(equalToConstant: 250).isActive = true
